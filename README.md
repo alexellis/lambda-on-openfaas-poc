@@ -49,6 +49,10 @@ If you like run this in multiple windows at the same time:
 )
 ```
 
+## Conceptual diagram
+
+![](./concept.png)
+
 ## What next?
 
 This code needs packaging as a Docker image to be deployed and run on OpenFaaS.
