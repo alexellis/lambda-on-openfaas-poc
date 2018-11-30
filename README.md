@@ -15,6 +15,10 @@ You'll need Node 8, 10 or 11 installed on your local machine.
 ```
 git clone https://github.com/lambci/node-custom-lambda
 cd node-custom-lambda/v10.x
+cd test
+npm i
+cd ..
+
 LAMBDA_TASK_ROOT=./test _HANDLER=".handler" AWS_LAMBDA_RUNTIME_API=127.0.0.1:9000 node bootstrap.js
 ```
 
@@ -55,7 +59,6 @@ If you like run this in multiple windows at the same time:
 
 ## What next?
 
-This code needs packaging as a Docker image to be deployed and run on OpenFaaS.
+This code needs packaging as a Docker image to be deployed and run on OpenFaaS. It could be part of the of-watchdog project as an additional mode, i.e. `lambda-shim` or similar.
 
-It could be part of the of-watchdog project as an additional mode, i.e. `lambda-shim` or similar.
-
+Is this finished/tested? No it's just an early proof-of-concept. Some internal pub/sub mechanism is probably required.
