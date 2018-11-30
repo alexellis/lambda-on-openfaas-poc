@@ -4,6 +4,8 @@ This example shows how to run an unmodified AWS Lambda function on OpenFaaS. The
 
 This is highly experimental / early-work and only a PoC.
 
+Watch the [Video demo / walk-through](https://www.youtube.com/watch?v=o_PiCR3p74k)
+
 ## Run locally
 
 ### Run the Lambda runtime
