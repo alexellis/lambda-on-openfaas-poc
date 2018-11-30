@@ -57,6 +57,30 @@ If you like run this in multiple windows at the same time:
 
 ![](./concept.png)
 
+## How do we know it works?
+
+You can test it out using the Node.js tester program in the verify folder.
+
+It verifies that if a request inputs a certain number that it's also echoed in the response.
+
+```
+cd verify
+npm i
+node index.js
+```
+
+If all the responses are correct you'll see `[x]` printed back on each line, otherwise the delta.
+
+Test in parallel:
+
+```
+(
+    node index.js &
+    node index.js &
+    node index.js &
+)
+```
+
 ## What next?
 
 This code needs packaging as a Docker image to be deployed and run on OpenFaaS. It could be part of the of-watchdog project as an additional mode, i.e. `lambda-shim` or similar.
