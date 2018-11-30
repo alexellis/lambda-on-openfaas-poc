@@ -88,3 +88,9 @@ Test in parallel:
 This code needs packaging as a Docker image to be deployed and run on OpenFaaS. It could be part of the of-watchdog project as an additional mode, i.e. `lambda-shim` or similar.
 
 Is this finished/tested? No it's just an early proof-of-concept. Some internal pub/sub mechanism is probably required.
+
+See also:
+
+* [Lambda custom runtimes](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-custom.html)
+* [Lambda Runtime Interface](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-api.html)
+* [Blog: OpenFaaS Template Store](https://www.openfaas.com/blog/template-store/)
